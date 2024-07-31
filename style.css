@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.logo {
+    font-family: 'Arial Black', Gadget, sans-serif; 
+    font-size: 1.5em; 
+    color: #b8b0b05c; 
+    background-color: #121111; 
+    padding: 2px 2px; 
+    border: 10px solid  #04090b; 
+    border-radius:0px; 
+    box-shadow: 0 80px 2000px rgba(0, 0, 0, 0.5);     
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 15px; 
+    transition: transform 10s ease-in-out;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #01040a, #2a3546);
+    padding: 150px 50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 50 15px; /* Adding margin between the items */
+    padding: 10px 20px; /* Padding inside the items */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background-size: cover;
+}
+
+.home::before {
+    background-image: url('icons/home.svg'); /* Replace with the path to your icon */
+}
+
+.road-bikes::before {
+    background-image: url('icons/road-bike.svg'); /* Replace with the path to your icon */
+}
+
+.mountain-bikes::before {
+    background-image: url('icons/mountain-bike.svg'); /* Replace with the path to your icon */
+}
+
+.twin-cylinder::before {
+    background-image: url('icons/twin-cylinder.svg'); /* Replace with the path to your icon */
+}
+
+.electric-bikes::before {
+    background-image: url('icons/electric-bike.svg'); /* Replace with the path to your icon */
+}
+
+.login::before {
+    background-image: url('icons/login.svg'); /* Replace with the path to your icon */
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.nav-item:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #2a3546;
+    color: #f4f4f4;
+    text-align: center;
+    padding:5px 0;
+}
+footer nav ul {
+    padding: 20px;
+    margin: 10px 0 0;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
